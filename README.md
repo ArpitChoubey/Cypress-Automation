@@ -72,8 +72,17 @@ QA Direction	Quality Engineering / AI-Assisted Testing
 
 The objective is not to automate clicks. The objective is to build reliable quality feedback into the software delivery lifecycle.
 
-🏗️ Framework Architecture
-Cypress-Automation
+
+
+
+
+
+---
+
+# 🏗️ Framework Architecture
+
+```text
+Cypress-Automation/
 │
 ├── cypress/
 │   │
@@ -124,7 +133,13 @@ Cypress-Automation
 ├── package.json
 ├── package-lock.json
 └── README.md
-🧪 UI & E2E Automation
+
+
+
+
+
+
+UI & E2E Automation 
 
 The framework contains practical UI automation scenarios covering common real-world web application behaviors.
 
@@ -564,18 +579,13 @@ AI-Powered Testing
 Automation Framework Development
 CI/CD
 Quality Engineering
-🔗 Connect With Me
-💻 GitHub
 
-👉 ArpitChoubey
 
-💼 LinkedIn
+🔗 **[View Repository](https://github.com/ArpitChoubey/Cypress-Automation)**  
+💼 **[Connect on LinkedIn](https://www.linkedin.com/in/arpitchoubey/)**  
+✍️ **[Read my Medium articles](https://medium.com/@ArpitChoubey9)**
 
-👉 Connect with me on LinkedIn
 
-✍️ Medium
-
-👉 Follow my Medium articles
 
 I regularly share practical content around QA Automation, Cypress, Selenium, Playwright, API Testing, CI/CD, AI Testing and Quality Engineering. My Medium profile currently includes articles on Cypress/Playwright comparisons, API testing, automation strategy and scalable testing frameworks.
 
