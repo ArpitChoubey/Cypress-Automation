@@ -48,6 +48,30 @@ The goal is to demonstrate an automation approach that is:
 
 The framework includes practical examples covering UI interactions, Page Object Model, fixtures, custom commands, data-driven testing, browser behavior, screenshots/videos, reporting, Cypress Cloud execution, and API testing.
 
+
+### Cypress Cloud — Test Execution Dashboard
+
+<img width="1920" height="1080" alt="Cypress  Dashboard 1" src="https://github.com/user-attachments/assets/4e069787-c437-42fd-8123-a71ab38cfd92" />
+
+
+<img width="1920" height="1080" alt="Cypress  Dashboard 2" src="https://github.com/user-attachments/assets/c1c3ab1b-43eb-4079-8aa3-7bca1bf5867c" />
+
+
+
+### Cypress Cloud — Detailed Spec Results
+
+<img width="1920" height="1080" alt="Cypress All Runs " src="https://github.com/user-attachments/assets/5fd6fe82-e2aa-4878-842e-fbb6afcfc3ea" />
+
+<img width="1920" height="1080" alt="Dashboard 3" src="https://github.com/user-attachments/assets/a5ec1893-e047-4e67-af6e-84ebeb79f6c9" />
+
+### Cypress Cloud — Additional Test Results
+
+<img width="1920" height="1080" alt="Cypress Mocha Report" src="https://github.com/user-attachments/assets/03f7d1b0-d5f0-408e-a347-4f02a42f68c1" />
+
+
+
+
+
 💼 Recruiter & Hiring Manager Snapshot
 
 If you're a Recruiter, Hiring Manager, QA Lead, QA Manager, SDET Manager, Automation Architect, or Engineering Manager, here's the quickest way to evaluate the project.
@@ -71,6 +95,12 @@ Engineering Focus	Maintainability / Scalability / Debuggability
 QA Direction	Quality Engineering / AI-Assisted Testing
 
 The objective is not to automate clicks. The objective is to build reliable quality feedback into the software delivery lifecycle.
+
+
+
+🔗 **[View Repository](https://github.com/ArpitChoubey/Cypress-Automation)**  
+💼 **[Connect on LinkedIn](https://www.linkedin.com/in/arpitchoubey/)**  
+✍️ **[Read my Medium articles](https://medium.com/@ArpitChoubey9)**
 
 
 
@@ -495,25 +525,11 @@ The dashboard screenshots demonstrate:
 * 📊 Test result visibility
 * 🔎 Failure investigation workflow
 
-### Cypress Cloud — Test Execution Dashboard
-
-<img width="1920" height="1080" alt="Cypress  Dashboard 1" src="https://github.com/user-attachments/assets/4e069787-c437-42fd-8123-a71ab38cfd92" />
-
-
-<img width="1920" height="1080" alt="Cypress  Dashboard 2" src="https://github.com/user-attachments/assets/c1c3ab1b-43eb-4079-8aa3-7bca1bf5867c" />
 
 
 
-### Cypress Cloud — Detailed Spec Results
-
-<img width="1920" height="1080" alt="Cypress All Runs " src="https://github.com/user-attachments/assets/5fd6fe82-e2aa-4878-842e-fbb6afcfc3ea" />
-
-<img width="1920" height="1080" alt="Dashboard 3" src="https://github.com/user-attachments/assets/a5ec1893-e047-4e67-af6e-84ebeb79f6c9" />
 
 
-
-### Cypress Cloud — Additional Test Results
-<img width="1920" height="1080" alt="Cypress Mocha Report" src="https://github.com/user-attachments/assets/03f7d1b0-d5f0-408e-a347-4f02a42f68c1" />
 
 
 
@@ -581,9 +597,6 @@ CI/CD
 Quality Engineering
 
 
-🔗 **[View Repository](https://github.com/ArpitChoubey/Cypress-Automation)**  
-💼 **[Connect on LinkedIn](https://www.linkedin.com/in/arpitchoubey/)**  
-✍️ **[Read my Medium articles](https://medium.com/@ArpitChoubey9)**
 
 
 
