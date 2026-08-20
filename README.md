@@ -28,63 +28,66 @@ https://github.com/ArpitChoubey/Cypress-Automation
 
 ---
 
-## 🎯 Why This Repository?
+🎯 What Is This Project?
 
-Writing a Cypress test is easy.
+This repository is a hands-on Cypress automation framework built to demonstrate how modern QA engineers can combine UI, E2E, and API testing inside a structured automation project.
 
-Building an automation framework that another engineer can **understand, maintain, extend, debug, and execute repeatedly** is the real engineering challenge.
+The goal isn't simply to write Cypress scripts.
 
-This repository focuses on that second problem.
+The goal is to demonstrate an automation approach that is:
 
-It demonstrates how I approach automation from a **Quality Engineering perspective**:
+🧩 Maintainable
+♻️ Reusable
+🏗️ Scalable
+🧪 Testable
+📊 Observable
+🔍 Debuggable
+☁️ Cloud-ready
+🚀 CI/CD-ready
+🤖 Ready for future AI-assisted testing
 
-* 🧩 Modular test organization
-* 🏗️ Page Object Model
-* ♻️ Reusable automation components
-* 🧪 Functional UI test coverage
-* 📊 Test data and fixtures
-* 🔧 Custom Cypress commands
-* 📸 Screenshots and video capture
-* 📑 HTML/Mochawesome reporting
-* ☁️ Cypress Cloud execution
-* 🔍 Failure visibility and diagnostics
-* 🧠 Framework scalability
-* 🚀 Foundation for CI/CD and AI-assisted quality engineering
+The framework includes practical examples covering UI interactions, Page Object Model, fixtures, custom commands, data-driven testing, browser behavior, screenshots/videos, reporting, Cypress Cloud execution, and API testing.
 
----
+💼 Recruiter & Hiring Manager Snapshot
 
-# 👨‍💻 Recruiter & Hiring Manager Snapshot
+If you're a Recruiter, Hiring Manager, QA Lead, QA Manager, SDET Manager, Automation Architect, or Engineering Manager, here's the quickest way to evaluate the project.
 
-If you are a **QA Manager, QA Lead, SDET Manager, Automation Architect, Hiring Manager, or Technical Recruiter**, this repository provides a quick view of hands-on automation engineering skills.
+Area	Demonstrated Skills
+UI Automation	Cypress E2E / UI Automation
+API Automation	Cypress API Testing
+Programming	JavaScript
+Framework	Cypress
+Architecture	Page Object Model
+Reusability	Custom Commands / Page Objects
+Test Data	Fixtures / Data-Driven Testing
+API Validation	Status Codes / Headers / Cookies / JSON
+JSON Validation	JSON Schema Validation
+API Workflows	Request Chaining / Query Parameters
+UI Coverage	Forms, dropdowns, alerts, tables, tabs, navigation
+Diagnostics	Screenshots / Videos
+Reporting	HTML / Mochawesome
+Cloud Execution	Cypress Cloud
+Engineering Focus	Maintainability / Scalability / Debuggability
+QA Direction	Quality Engineering / AI-Assisted Testing
 
-| Area              | Demonstrated Capability                                           |
-| ----------------- | ----------------------------------------------------------------- |
-| Automation        | Cypress UI / E2E automation                                       |
-| Language          | JavaScript                                                        |
-| Test Framework    | Cypress                                                           |
-| Design Pattern    | Page Object Model                                                 |
-| Test Organization | Modular E2E test structure                                        |
-| Test Data         | Fixtures / data-driven scenarios                                  |
-| Reusability       | Custom commands and reusable page components                      |
-| UI Coverage       | Forms, dropdowns, tables, alerts, navigation, tabs, mouse actions |
-| Validation        | Assertions and UI behavior validation                             |
-| Diagnostics       | Screenshots, videos and execution logs                            |
-| Reporting         | Mochawesome / HTML reporting                                      |
-| Cloud Execution   | Cypress Cloud                                                     |
-| Engineering Focus | Maintainability, readability and scalability                      |
+The objective is not to automate clicks. The objective is to build reliable quality feedback into the software delivery lifecycle.
 
-> **The goal is not simply to automate clicks. The goal is to build an automation system that provides reliable feedback about application quality.**
-
----
-
-# 🏗️ Framework Structure
-
-```text
-Cypress-Automation/
+🏗️ Framework Architecture
+Cypress-Automation
 │
 ├── cypress/
 │   │
 │   ├── e2e/
+│   │   │
+│   │   ├── APITesting/
+│   │   │   ├── Chaining_placeholderAPI.cy.js
+│   │   │   ├── HeadersCookies.cy.js
+│   │   │   ├── HttpRequests.cy.js
+│   │   │   ├── JSONSchemaValidation.cy.js
+│   │   │   ├── ParsingJSONResponse.cy.js
+│   │   │   ├── PassingQueryParams.cy.js
+│   │   │   └── PostMethods.cy.js
+│   │   │
 │   │   ├── Pageobject/
 │   │   │   ├── LoginPage.js
 │   │   │   └── LoginPage2.js
@@ -112,29 +115,175 @@ Cypress-Automation/
 │   │   └── checkbutton.cy.js
 │   │
 │   ├── fixtures/
-│   │
 │   ├── support/
-│   │
 │   ├── screenshots/
-│   │
 │   └── reports/
 │       └── html/
-│
-├── node_modules/
 │
 ├── cypress.config.js
 ├── package.json
 ├── package-lock.json
 └── README.md
-```
+🧪 UI & E2E Automation
 
----
+The framework contains practical UI automation scenarios covering common real-world web application behaviors.
 
-# 🧩 Page Object Model
+🔐 Authentication
+Login automation
+Login using Page Object Model
+Reusable login components
+🖱️ UI Interactions
+Buttons
+Checkboxes
+Radio buttons
+Dropdowns
+Auto-suggest dropdowns
+Tables
+Mouse actions
+Navigation
+Tabs
+Links
+File upload
+🌐 Browser/Application Behavior
+Alerts
+Assertions
+CSS selectors
+XPath locators
+Handling tabs
+Dropdown handling
+Hooks and tags
+📂 Test Data & Reusability
+Fixtures
+Data-driven testing
+Custom commands
+Reusable page objects
+Common test utilities
+🔌 API Testing with Cypress
 
-A major focus of this project is keeping **test behavior separate from page-specific implementation details**.
+Modern applications are not just UI.
 
-```text
+Behind almost every button, form, dashboard, and workflow there is an API.
+
+That's why this repository now includes a dedicated API Testing module.
+
+cypress/
+└── e2e/
+    └── APITesting/
+        ├── Chaining_placeholderAPI.cy.js
+        ├── HeadersCookies.cy.js
+        ├── HttpRequests.cy.js
+        ├── JSONSchemaValidation.cy.js
+        ├── ParsingJSONResponse.cy.js
+        ├── PassingQueryParams.cy.js
+        └── PostMethods.cy.js
+🚀 API Testing Scenarios
+1. HTTP Requests
+
+Demonstrates API request/response validation using Cypress.
+
+GET requests
+POST requests
+Request configuration
+Response validation
+Status-code verification
+2. POST Methods
+
+Validates API behavior when creating or submitting data.
+
+Request body validation
+Response validation
+Status code verification
+Response data assertions
+3. Request Chaining
+
+Demonstrates how one API response can provide data required by a subsequent request.
+
+API Request #1
+      ↓
+Extract Response Data
+      ↓
+Use Data in API Request #2
+      ↓
+Validate Final Response
+
+This is particularly useful for testing realistic API workflows rather than isolated endpoints.
+
+4. Headers & Cookies
+
+API tests also cover:
+
+Request headers
+Response headers
+Cookies
+Authentication-related data
+Response metadata
+5. Query Parameters
+
+Demonstrates passing and validating query parameters.
+
+Endpoint
+   +
+Query Parameters
+   ↓
+API Request
+   ↓
+Response
+   ↓
+Assertions
+6. JSON Response Parsing
+
+API responses often contain nested JSON structures.
+
+The framework demonstrates extracting and validating values from JSON responses.
+
+7. JSON Schema Validation
+
+Schema validation helps verify that an API response follows the expected structure.
+
+This provides stronger validation than simply checking:
+
+Status = 200
+
+Instead, the test can validate:
+
+Status Code
+     +
+Response Structure
+     +
+Required Fields
+     +
+Data Types
+     +
+Expected Values
+🔄 Why Combine UI + API Testing?
+
+One of the biggest advantages of Cypress is being able to validate different layers of an application using a common automation ecosystem.
+
+                Application
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+        UI Layer             API Layer
+          │                     │
+       Cypress              Cypress
+          │                     │
+          └──────────┬──────────┘
+                     │
+              Quality Feedback
+UI testing answers:
+
+Can the user successfully complete the workflow?
+
+API testing answers:
+
+Does the backend correctly process and return the data?
+
+Together they provide a stronger quality signal.
+
+🧩 Page Object Model
+
+The project uses the Page Object Model to separate page-specific implementation from test scenarios.
+
 Test Case
     │
     ▼
@@ -146,96 +295,174 @@ Page Object
             │
             ▼
        Application UI
-```
+Benefits
+✅ Less duplicated locator logic
+✅ Easier maintenance
+✅ Better test readability
+✅ Reusable page actions
+✅ Cleaner test cases
+✅ Easier framework scaling
+📊 Test Execution & Reporting
 
-### Why POM?
+A test framework should answer more than:
 
-* ✅ Reduces duplicated locator logic
-* ✅ Makes tests easier to read
-* ✅ Makes locator maintenance easier
-* ✅ Encourages reusable page actions
-* ✅ Allows test cases to focus on business behavior
-* ✅ Provides a scalable structure as the application grows
+"Did the test pass?"
 
-Example structure:
+It should help answer:
 
-```text
-cypress/
-└── e2e/
-    └── Pageobject/
-        ├── LoginPage.js
-        └── LoginPage2.js
-```
+What was executed?
+What failed?
+Which specification failed?
+How long did it take?
+Was it an error or assertion failure?
+What evidence is available?
+Can the failure be investigated?
 
----
+This repository includes multiple layers of execution visibility.
 
-# 🧪 Automation Coverage
+☁️ Cypress Cloud Execution
 
-The repository contains practical Cypress scenarios covering multiple areas of web application behavior.
+The project has been executed using Cypress Cloud.
 
-### 🔐 Authentication
+The attached execution screenshots demonstrate:
 
-* Login automation
-* Login using Page Object Model
-* Login-related reusable page components
+📋 Specification-level execution
+🟢 Passed specifications
+🔴 Failed specifications
+🟠 Execution errors
+⏱️ Execution duration
+📊 Test result summaries
+🔎 Failure visibility
+Example Execution Evidence
 
-### 🖱️ UI Interactions
+The Cypress Cloud screenshots included with this project show a real execution containing multiple specifications with both passing and failing results.
 
-* Buttons
-* Radio buttons
-* Dropdowns
-* Auto-suggest dropdowns
-* Checkboxes
-* Mouse actions
-* Tables
-* Navigation
-* Links
-* Tabs/windows
+This is intentional.
 
-### ⚠️ Browser & Application Behavior
+A good automation portfolio shouldn't only show green tests.
 
-* Alerts
-* Assertions
-* Handling tabs
-* Dropdown handling
-* XPath locators
-* CSS selectors
+Real engineering also means being able to:
 
-### 📂 Test Data & Reusability
+Detect failures
+Understand failures
+Investigate failures
+Improve tests
+Improve application quality
+📑 Mochawesome HTML Report
 
-* Fixtures
-* Data-driven testing
-* Custom commands
-* Hooks and tags
-* Reusable Page Object components
+The project also includes HTML-based reporting.
 
-### 📸 Diagnostics
+The attached Mochawesome report demonstrates a successful execution with:
 
-* Screenshot capture
-* Video capture
-* HTML reports
-* Cypress Cloud execution visibility
+✅ 1 passing test
+❌ 0 failing tests
+⏱️ Approximately 12.6 seconds execution time
+📋 Individual test visibility
 
----
+The report provides a clean way for QA engineers and stakeholders to review test execution without opening the Cypress runner.
 
-# 📊 Test Execution & Reporting
+📸 Execution Evidence
 
-One of the important parts of this project is not stopping at:
+This repository includes visual evidence of the automation framework.
 
-> **"The test ran."**
+Evidence includes:
+🖥️ GitHub project structure
+🧩 Page Object implementation
+🧪 Cypress E2E specifications
+🔌 API Testing specifications
+☁️ Cypress Cloud execution
+📊 Test result dashboards
+📑 Mochawesome HTML report
+📸 Screenshot capability
+🎥 Video capture capability
+🧠 Engineering Principles
 
-A professional automation framework should answer:
+The framework is built around practical Quality Engineering principles.
 
-* What ran?
-* What passed?
-* What failed?
-* Where did it fail?
-* How long did it take?
-* Can the failure be reproduced?
-* Is there evidence?
-* Can the results be reviewed by the wider QA team?
+♻️ Reusability
 
-This project demonstrates that feedback loop through **Cypress Cloud and HTML/Mochawesome reporting**.
+Common actions should be implemented once and reused wherever possible.
+
+🧩 Maintainability
+
+Application changes should require minimal changes to the test suite.
+
+🏗️ Separation of Concerns
+
+Test behavior, page implementation, test data, and utilities should remain logically separated.
+
+🔍 Debuggability
+
+When something fails, the framework should provide useful evidence.
+
+📊 Observability
+
+Test results should be visible to engineers and stakeholders.
+
+🚀 Scalability
+
+Adding new scenarios shouldn't require rebuilding the framework.
+
+🤖 AI Testing & Future Quality Engineering
+
+Traditional automation gives us repeatability.
+
+The next step is making automation more intelligent.
+
+This framework provides a foundation for future AI-assisted Quality Engineering capabilities.
+
+Potential enhancements include:
+
+🤖 AI-assisted test generation
+🧠 Intelligent test prioritization
+🔎 AI-assisted failure analysis
+🐞 Automated failure classification
+📝 AI-generated test documentation
+🧪 Intelligent test-data generation
+🔄 Self-healing automation concepts
+📊 Risk-based regression selection
+♿ AI-assisted accessibility testing
+🔐 AI-assisted security testing
+📈 Intelligent quality analytics
+
+AI should amplify good testing practices — not replace them.
+
+The fundamentals still matter:
+
+Good test design + reliable automation + meaningful assertions + useful reporting = better quality feedback.
+
+🛠️ Technology Stack
+Technology	Purpose
+Cypress	UI, E2E & API automation
+JavaScript	Automation development
+Node.js	Runtime & package management
+Page Object Model	Test architecture
+Fixtures	Test data management
+Custom Commands	Reusable automation
+Mochawesome	HTML reporting
+Cypress Cloud	Cloud execution & visibility
+JSON Schema	API response validation
+▶️ Getting Started
+Clone the Repository
+git clone https://github.com/ArpitChoubey/Cypress-Automation.git
+Navigate to the Project
+cd Cypress-Automation
+Install Dependencies
+npm install
+Open Cypress
+npx cypress open
+Run All Tests
+npx cypress run
+Run a Specific UI Test
+npx cypress run --spec "cypress/e2e/MyFirstTest.cy.js"
+Run API Tests
+npx cypress run --spec "cypress/e2e/API Testing/*.cy.js"
+
+If your local folder name contains spaces, you can alternatively run individual API specifications directly.
+
+Example:
+
+npx cypress run --spec "cypress/e2e/API Testing/HttpRequests.cy.js"
 
 ---
 
@@ -277,64 +504,33 @@ The dashboard screenshots demonstrate:
 
 > **Why this matters:** A mature automation framework should make failures visible rather than hiding them. The dashboard screenshots demonstrate how individual specs can be reviewed to identify failures, errors and execution behavior.
 
----
+🎯 Who Is This Repository For?
 
-# 📑 HTML / Mochawesome Report
+This project is particularly relevant to:
 
-The project also includes HTML-based test reporting.
+👨‍💻 QA Automation Engineers
+🧪 SDETs
+🔍 Software Test Engineers
+🏗️ Quality Engineers
+👨‍💼 QA Leads
+👩‍💼 QA Managers
+🧠 Automation Architects
+👨‍💼 Engineering Managers
+🎯 Hiring Managers
+🔎 Technical Recruiters
+💡 What This Project Demonstrates
 
-The attached report demonstrates a clean execution with:
+Instead of presenting automation as a collection of scripts, this repository demonstrates a broader engineering workflow:
 
-* ✅ 1 passing test
-* ❌ 0 failing tests
-* ⏱️ Approximately 12.6 seconds execution time
-* 📋 Test-level execution visibility
-
-### Mochawesome HTML Report
-
-![Cypress Mochawesome Report](docs/screenshots/cypress-mochawesome-report.png)
-
-This type of report is useful when QA teams need a **readable execution summary** outside the Cypress runner.
-
----
-
-# 🔍 What the Reports Demonstrate
-
-The reporting strategy is intentionally focused on more than pass/fail status.
-
-### For QA Engineers
-
-* Quickly identify failed scenarios
-* Review execution duration
-* Investigate individual specs
-* Use screenshots/videos as debugging evidence
-
-### For QA Leads
-
-* Understand regression execution behavior
-* Identify unstable or problematic areas
-* Review test coverage at specification level
-* Communicate automation results to stakeholders
-
-### For QA Managers
-
-* Gain visibility into automation execution
-* Understand regression feedback
-* Track where automation is providing value
-* Use centralized reporting during quality discussions
-
-### For Hiring Managers
-
-The repository provides evidence that the candidate understands the **complete automation lifecycle**:
-
-```text
+Requirements
+     ↓
 Test Design
      ↓
-Automation Development
+UI + API Automation
      ↓
 Reusable Framework
      ↓
-Test Execution
+Execution
      ↓
 Failure Detection
      ↓
@@ -342,251 +538,71 @@ Evidence Collection
      ↓
 Reporting
      ↓
-Quality Feedback
-```
+Quality Insights
+     ↓
+Continuous Improvement
+
+That's the mindset I want my automation projects to communicate.
+
+👨‍💻 About Me
+Arpit Choubey
+
+SDET | QA Automation Engineer | Quality Engineering
+
+Areas of focus:
+
+Cypress
+Selenium
+Playwright
+Robot Framework
+JavaScript
+Python
+API Testing
+UI Automation
+Accessibility Testing
+AI-Powered Testing
+Automation Framework Development
+CI/CD
+Quality Engineering
+🔗 Connect With Me
+💻 GitHub
+
+👉 ArpitChoubey
+
+💼 LinkedIn
+
+👉 Connect with me on LinkedIn
+
+✍️ Medium
+
+👉 Follow my Medium articles
+
+I regularly share practical content around QA Automation, Cypress, Selenium, Playwright, API Testing, CI/CD, AI Testing and Quality Engineering. My Medium profile currently includes articles on Cypress/Playwright comparisons, API testing, automation strategy and scalable testing frameworks.
+
+⭐ Support the Project
+
+If you find this repository useful:
+
+⭐ Star the repository
+🍴 Fork the project
+💬 Share feedback
+🐛 Report issues
+🤝 Connect with me
+🔗 Share it with the QA community
+
+Every suggestion helps improve the framework.
+
+📌 Keywords
+
+Cypress Cypress Automation Cypress Testing Cypress API Testing UI Automation E2E Testing API Testing JavaScript Quality Engineering QA Automation SDET Software Testing Test Automation Automation Framework Page Object Model Test Reporting Cypress Cloud Mochawesome JSON Schema Validation CI/CD AI Testing AI-Powered Testing Intelligent Testing AI in Testing Continuous Testing
+
+🚀 Automate the UI.
+🔌 Validate the APIs.
+🔍 Understand the failures.
+📊 Turn test results into quality insights.
+🤖 Build toward intelligent Quality Engineering.
+
+Repository: https://github.com/ArpitChoubey/Cypress-Automation
 
 ---
 
-# 🧠 Engineering Principles
-
-This project is built around several practical automation principles.
-
-### 1. Maintainability
-
-Test automation should be easy to change when the application changes.
-
-### 2. Reusability
-
-Common actions should not be repeatedly implemented inside every test.
-
-### 3. Separation of Concerns
-
-Page-specific implementation should remain separate from business-level test scenarios.
-
-### 4. Readability
-
-A test should communicate **what is being validated**, not bury the intent under implementation details.
-
-### 5. Diagnostics
-
-When a test fails, the framework should provide enough information to investigate the problem.
-
-### 6. Scalability
-
-Adding new test scenarios should not require rewriting the existing framework.
-
----
-
-# 🛠️ Technology Stack
-
-| Technology            | Purpose                             |
-| --------------------- | ----------------------------------- |
-| **Cypress**           | UI / E2E test automation            |
-| **JavaScript**        | Automation development              |
-| **Node.js**           | Runtime and package management      |
-| **Mochawesome**       | HTML test reporting                 |
-| **Cypress Cloud**     | Cloud execution and test visibility |
-| **Page Object Model** | Maintainable test architecture      |
-| **Fixtures**          | Test data management                |
-| **Custom Commands**   | Reusable automation functionality   |
-
----
-
-# ▶️ Getting Started
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/ArpitChoubey/Cypress-Automation.git
-```
-
-## 2. Navigate to the Project
-
-```bash
-cd Cypress-Automation
-```
-
-## 3. Install Dependencies
-
-```bash
-npm install
-```
-
-## 4. Open Cypress
-
-```bash
-npx cypress open
-```
-
-## 5. Run Cypress in Headless Mode
-
-```bash
-npx cypress run
-```
-
-## 6. Run a Specific Test
-
-```bash
-npx cypress run --spec "cypress/e2e/MyFirstTest.cy.js"
-```
-
----
-
-# 📸 Evidence-Based Automation
-
-This repository intentionally includes execution evidence rather than presenting automation only as source code.
-
-### Evidence included
-
-* 🖥️ GitHub repository structure
-* 🧩 Page Object implementation
-* 🧪 Cypress E2E specifications
-* ☁️ Cypress Cloud execution
-* 📊 Test execution dashboards
-* 📑 HTML/Mochawesome report
-* 📸 Screenshot/video capability
-
-This makes the project easier for a reviewer to evaluate without having to understand every test file first.
-
----
-
-# 🤖 AI Testing & Quality Engineering Direction
-
-Modern QA is moving beyond traditional UI automation.
-
-Cypress automation provides a strong foundation for the next stage of **AI-assisted Quality Engineering**, including potential future capabilities such as:
-
-* 🤖 AI-assisted test generation
-* 🧠 Intelligent test case prioritization
-* 🔎 AI-assisted failure analysis
-* 📝 Automated test documentation
-* 🐞 Failure classification
-* 📊 Quality risk analysis
-* 🔄 Self-healing automation concepts
-* 🧪 AI-generated test data
-* ♿ AI-assisted accessibility testing
-* 🔐 AI-assisted security test analysis
-* 📈 Intelligent regression optimization
-
-> **AI should not replace quality engineering fundamentals. It should amplify them.**
-
-The foundation remains the same:
-
-**Reliable automation + meaningful assertions + quality data + useful reporting.**
-
----
-
-# 🎯 What This Project Says About My QA Engineering Approach
-
-I don't see automation as simply replacing manual clicks.
-
-I see it as an engineering system designed to provide **fast, repeatable and actionable quality feedback**.
-
-This project demonstrates my focus on:
-
-* Automation architecture
-* UI automation
-* Test maintainability
-* Reusable design
-* Page Object Model
-* Test data management
-* Failure diagnostics
-* Reporting
-* Cloud execution
-* Quality engineering
-* Continuous improvement
-
----
-
-# 💼 Ideal For
-
-This repository is particularly relevant for:
-
-* **QA Engineers**
-* **Automation Test Engineers**
-* **SDETs**
-* **Software Test Engineers**
-* **Quality Engineers**
-* **QA Leads**
-* **QA Managers**
-* **Automation Architects**
-* **Engineering Managers**
-* **Technical Recruiters**
-* **Hiring Managers**
-
----
-
-# ⭐ Why Review This Repository?
-
-If you're evaluating an automation engineer, don't just look for the number of test cases.
-
-Look for evidence of engineering thinking.
-
-This repository demonstrates:
-
-> **Framework → Automation → Execution → Diagnostics → Reporting → Quality Feedback**
-
-That is the mindset I aim to bring to modern **Quality Engineering and AI-assisted Testing**.
-
----
-
-# 👨‍💻 About Me
-
-**Arpit Choubey**
-Automation Test Engineer
-
-Areas of interest and expertise:
-
-* Cypress
-* Selenium
-* Robot Framework
-* Playwright
-* JavaScript
-* Python
-* API Testing
-* UI Automation
-* Accessibility Testing
-* AI-Powered Testing
-* Automation Framework Development
-* CI/CD
-* Quality Engineering
-
----
-
-# 🔗 Connect & Explore
-
-### ⭐ GitHub Repository
-
-https://github.com/ArpitChoubey/Cypress-Automation
-
-### 💬 Feedback
-
-If you review this project, feedback on **framework architecture, test reliability, reporting, or AI-assisted testing opportunities** is always welcome.
-
-### ⭐ Support
-
-If you find the project useful:
-
-* ⭐ Star the repository
-* 🍴 Fork it
-* 💬 Open an issue
-* 🤝 Share feedback
-* 🔗 Connect with me
-
----
-
-## 📌 Repository Tags
-
-`cypress` `cypress-automation` `test-automation` `ui-automation` `e2e-testing` `javascript` `qa-automation` `quality-engineering` `sdet` `software-testing` `automation-framework` `page-object-model` `test-engineering` `ai-testing` `ai-powered-testing` `ai-in-testing` `intelligent-testing` `continuous-testing` `test-reporting` `cypress-cloud`
-
----
-
-<p align="center">
-
-### 🚀 Automate the UI.
-
-### 🔍 Understand the failures.
-
-### 📊 Turn test results into quality insights.
-
-</p>
