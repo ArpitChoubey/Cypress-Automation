@@ -1,0 +1,5 @@
+node_modules/** linguist-vendored
+cypress/reports/** linguist-vendored
+*.html linguist-detectable=false
+*.json linguist-detectable=false
+*.js linguist-language=JavaScript
